@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazing Grace Hospitals</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #0073e6;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    .about, .services, .contact {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0073e6;
+      margin-top: 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #0073e6;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+    }
+    a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Amazing Grace Hospitals</h1>
+    <p>Compassionate Care for Our Community</p>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      At Amazing Grace Hospitals, we are committed to providing accessible, 
+      high-quality healthcare to our community. Led by 
+      <strong>Dr. Olukayode Ogunkunle</strong>, our team combines compassion 
+      with modern medical practices to ensure every patient receives 
+      personalized attention.
+    </p>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>General Medical Consultation</li>
+      <li>Maternal & Child Health</li>
+      <li>Preventive Care & Screening</li>
+      <li>Emergency Medical Services</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: 
+      <a href="mailto:dr.olukayode.ogunkunle@amazinggracehospitals.com">
+        dr.olukayode.ogunkunle@amazinggracehospitals.com
+      </a>
+    </p>
+    <p>Phone: +234 800 000 0000</p>
+    <p>Location: Ibadan, Nigeria</p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Amazing Grace Hospitals. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
